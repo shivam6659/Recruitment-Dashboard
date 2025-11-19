@@ -1,0 +1,106 @@
+/* Whole page layout */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 240px;
+  background: #212529;
+  color: white;
+  padding: 20px 15px;
+  box-shadow: 3px 0 8px rgba(0,0,0,0.2);
+}
+
+.logo {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Sidebar links */
+.sidebar nav a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  padding: 12px 15px;
+  margin: 6px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.sidebar nav a:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* Special login button */
+.sidebar nav .login {
+  background: #198754;
+  color: white;
+}
+
+.sidebar nav .login:hover {
+  background: #157347;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 25px;
+}
+
+/* Main area wraps header + content */
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+.header {
+  width: 100%;
+  background: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e3e6ea;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Title */
+.header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #212529;
+}
+
+/* User section on right */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* User icon */
+.user-icon {
+  font-size: 20px;
+}
+
+/* Username */
+.username {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}

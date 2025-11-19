@@ -1,0 +1,16 @@
+<!-- <h3>Departments</h3>
+    <ul>
+      <li *ngFor="let d of departments">{{d.name}}</li>
+    </ul> -->
+
+
+<div class="department-container">
+  <h3 class="title">Departments</h3>
+
+  <div class="department-list">
+    <div class="department-card" *ngFor="let d of departments">
+      <span class="icon">🏢</span>
+      <p class="name">{{ d.name }}</p>
+    </div>
+  </div>
+</div>

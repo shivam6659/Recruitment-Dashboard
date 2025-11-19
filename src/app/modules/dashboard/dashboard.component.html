@@ -1,0 +1,32 @@
+
+    <!-- <h3>Dashboard</h3>
+    <div *ngIf="stats">
+      <p>Total Employees: {{stats.employees}}</p>
+      <p>Total Applicants: {{stats.applicants}}</p>
+      <p>Departments: {{stats.departments}}</p>
+    </div>
+   -->
+
+
+   <div class="dashboard-container">
+  <h3 class="title">Dashboard</h3>
+
+  <div *ngIf="stats" class="stats-grid">
+
+    <div class="stat-card employees">
+      <h4>Total Employees</h4>
+      <p class="count">{{ stats.employees }}</p>
+    </div>
+
+    <div class="stat-card applicants">
+      <h4>Total Applicants</h4>
+      <p class="count">{{ stats.applicants }}</p>
+    </div>
+
+    <div class="stat-card departments">
+      <h4>Departments</h4>
+      <p class="count">{{ stats.departments }}</p>
+    </div>
+
+  </div>
+</div>

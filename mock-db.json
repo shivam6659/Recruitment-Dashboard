@@ -1,0 +1,76 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Amit Kumar",
+      "role": "Frontend Developer",
+      "department": "Engineering",
+      "joiningDate": "2023-02-15",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "Sana Sharma",
+      "role": "HR Manager",
+      "department": "HR",
+      "joiningDate": "2022-07-01",
+      "status": "Active"
+    }
+  ],
+  "applicants": [
+    {
+      "id": 1,
+      "name": "Ravi Verma",
+      "appliedRole": "Backend Developer",
+      "experience": 4,
+      "status": "New",
+      "contact": "9999999999",
+      "resumeLink": ""
+    },
+    {
+      "id": 2,
+      "name": "Neha Singh",
+      "appliedRole": "Tester",
+      "experience": 2,
+      "status": "Shortlisted",
+      "contact": "9888888888",
+      "resumeLink": ""
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Engineering"
+    },
+    {
+      "id": 2,
+      "name": "HR"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "SuperAdmin",
+      "token": "mock-jwt-admin"
+    },
+    {
+      "id": 2,
+      "username": "hr",
+      "password": "hr123",
+      "role": "HR",
+      "token": "mock-jwt-hr"
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "employeeId": 1,
+      "fileName": "resume_amit.pdf",
+      "uploadDate": "2024-05-01",
+      "category": "Resume",
+      "url": ""
+    }
+  ]
+}

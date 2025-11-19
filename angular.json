@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "projects": {
+    "recruitment-dashboard": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/recruitment-dashboard",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "recruitment-dashboard:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "recruitment-dashboard",
+  "cli": {
+    "analytics": "252cd4c5-3a7e-4d4f-ac70-7695f10ed99e"
+  }
+}

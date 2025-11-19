@@ -1,0 +1,1 @@
+This folder contains the Angular app source files (scaffold).

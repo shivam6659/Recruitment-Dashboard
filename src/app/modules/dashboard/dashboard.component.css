@@ -1,0 +1,64 @@
+/* Page container */
+.dashboard-container {
+  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #343a40;
+}
+
+/* Grid layout for stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.stat-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover */
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Card Title */
+.stat-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Number Styling */
+.count {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Individual Card Colors */
+.stat-card.employees {
+  background: #0d6efd;
+}
+
+.stat-card.applicants {
+  background: #198754;
+}
+
+.stat-card.departments {
+  background: #fd7e14;
+}

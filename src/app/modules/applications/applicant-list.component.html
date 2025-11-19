@@ -1,0 +1,23 @@
+
+    <!-- <h3>Applicants</h3>
+    <ul>
+      <li *ngFor="let a of applicants">
+        {{a.name}} — {{a.appliedRole}} — {{a.experience}} yrs — {{a.status}}
+      </li>
+    </ul> -->
+  
+
+    <div class="applicant-container">
+  <h3 class="title">Applicants</h3>
+
+  <div class="applicant-list">
+    <div class="applicant-card" *ngFor="let a of applicants">
+      <h4>{{ a.name }}</h4>
+      <p><strong>Applied Role:</strong> {{ a.appliedRole }}</p>
+      <p><strong>Experience:</strong> {{ a.experience }} years</p>
+      <p><strong>Status:</strong> 
+        <span class="status" [ngClass]="a.status.toLowerCase()">{{ a.status }}</span>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+
+    <h3>Login</h3>
+    <form (submit)="doLogin($event)">
+      <label>Username: <input name="username" /></label><br/>
+      <label>Password: <input name="password" type="password" /></label><br/>
+      <button type="submit">Login</button>
+    </form>
+    <p *ngIf="err" style="color:red">{{err}}</p>
+  

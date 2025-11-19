@@ -1,0 +1,54 @@
+/* Main container */
+.department-container {
+  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #343a40;
+}
+
+/* Grid layout for departments */
+.department-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+/* Card UI */
+.department-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-left: 5px solid #6610f2;
+}
+
+/* Hover animation */
+.department-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.15);
+}
+
+/* Icon */
+.icon {
+  font-size: 26px;
+  color: #6610f2;
+}
+
+/* Department Name */
+.name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}

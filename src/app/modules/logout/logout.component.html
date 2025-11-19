@@ -1,0 +1,21 @@
+<!-- <div class="logout-wrapper">
+  <div class="logout-card">
+    <h2>Logging Out...</h2>
+    <p>आपको लॉग-आउट किया जा रहा है, कृपया प्रतीक्षा करें।</p>
+
+    <div class="loader"></div>
+  </div>
+</div> -->
+
+
+<div class="logout-wrapper">
+  <div class="confirm-card">
+    <h2>Logout</h2>
+    <p>क्या आप वाकई लॉग-आउट करना चाहते हैं?</p>
+
+    <div class="btn-box">
+      <button class="btn logout-btn" (click)="doLogout()">Logout</button>
+      <a routerLink="/dashboard" class="btn cancel-btn">Cancel</a>
+    </div>
+  </div>
+</div>

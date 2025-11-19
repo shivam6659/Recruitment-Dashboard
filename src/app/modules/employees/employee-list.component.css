@@ -1,0 +1,88 @@
+/* Main container */
+.employee-container {
+  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #343a40;
+}
+
+/* Search box styling */
+.search-box {
+  width: 50%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: 0.3s;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13,110,253,0.3);
+}
+
+/* Grid for employee cards */
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Individual employee card */
+.employee-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 5px solid #0d6efd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+/* Hover animation */
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Name */
+.employee-card h4 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #0d6efd;
+}
+
+/* Text details */
+.employee-card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Status badge */
+.status {
+  padding: 4px 10px;
+  border-radius: 16px;
+  color: white;
+  font-size: 13px;
+}
+
+/* Status colors */
+.status.active {
+  background: #198754;
+}
+
+.status.inactive {
+  background: #dc3545;
+}
+
+.status.onleave {
+  background: #ffc107;
+}

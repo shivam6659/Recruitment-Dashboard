@@ -1,0 +1,35 @@
+
+    <!-- <h3>Employees</h3>
+    <input placeholder="Search by name" (input)="q=$event.target.value" />
+    <ul>
+      <li *ngFor="let emp of employees | filterByName:q">
+        {{emp.name}} — {{emp.role}} — {{emp.department}} — {{emp.status}}
+      </li>
+    </ul> -->
+
+    <div class="employee-container">
+
+  <h3 class="title">Employees Management</h3>
+
+  <input 
+    class="search-box" 
+    placeholder="Search by name..." 
+    (input)="q = $event.target.value" 
+  />
+
+  <div class="employee-list">
+    <div class="employee-card" *ngFor="let emp of employees | filterByName:q">
+      <h4>{{ emp.name }}</h4>
+      <p><strong>Role:</strong> {{ emp.role }}</p>
+      <p><strong>Department:</strong> {{ emp.department }}</p>
+      <p><strong>Status:</strong> 
+        <span class="status" [ngClass]="emp.status.toLowerCase()">
+          {{ emp.status }}
+        </span>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+  

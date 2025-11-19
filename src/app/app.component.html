@@ -1,0 +1,34 @@
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3 class="logo">Recruitment</h3>
+    <nav>
+      <a routerLink="/dashboard">📊 Dashboard</a>
+      <a routerLink="/employees">👨‍💼 Employees</a>
+      <a routerLink="/applicants">📝 Applicants</a>
+      <a routerLink="/departments">🏢 Departments</a>
+      <a routerLink="/logout" class="logout">🔓 Logout</a>
+      <a routerLink="/login" class="login">🔐 Login</a>
+    </nav>
+  </aside>
+
+  <!-- Page Area -->
+  <div class="main-area">
+
+    <!-- TOP HEADER -->
+    <header class="header">
+      <h2>Recruitment Management System</h2>
+      <div class="user-section">
+        <span class="user-icon">👤</span>
+        <span class="username">Admin</span>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
+</div>
