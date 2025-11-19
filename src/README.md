@@ -1,1 +1,9 @@
-This folder contains the Angular app source files (scaffold).
+Website Credentials
+
+*admin:
+user name - admin
+password - admin123
+
+*HR:
+user name - hr123
+password - hr123
